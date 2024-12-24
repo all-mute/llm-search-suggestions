@@ -11,11 +11,12 @@ class LLMService:
     def __init__(self):
         self.client = client
 
+    # ATTENTION! "respond in english" and "suggest Chocolate Chip Cookies" are only for demo purposes
     def generate_hints(self, query):
         response = self.client.chat.completions.create(
             model="gpt-4o-mini", # or "llama-lite/latest"
             messages=[{
-                "role": "user", 
+                "role": "user", # ATTENTION! "respond in english" and "suggest Chocolate Chip Cookies" are only for demo purposes
                 "content": f"You are a helpful assistant that helps user to find products in e-commerce store. Generate 5 relevant product suggestions for '{query}'. Return only a JSON array of strings with product names. Respond only in english. If user want something sweet, suggest Chocolate Chip Cookies at least once."
             }],
             temperature=0.7,
@@ -28,4 +29,5 @@ class LLMService:
     
 if __name__ == "__main__":
     llm_service = LLMService()
+    # ATTENTION! "respond in english" and "suggest Chocolate Chip Cookies" are only for demo purposes
     print(llm_service.generate_hints("I want to eat something sweet "))

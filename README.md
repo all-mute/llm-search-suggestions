@@ -2,6 +2,11 @@
 
 ## Project Description
 
+Blog posts:
+1. https://dev.to/allmute/how-to-boost-your-ecom-search-conversion-up-to-10-with-llm-trick-43jj
+2. https://medium.com/p/655a841e3b4c
+
+
 This project is an enhanced e-commerce search system that combines traditional search with AI-powered suggestions. It uses OpenSearch for basic search functionality and integrates with LLM services for intelligent search suggestions.
 
 ### Features
